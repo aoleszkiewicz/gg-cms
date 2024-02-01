@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_content_subarticles",
+  "info": {
+    "displayName": "Subarticle",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "contentBoxes": {
+      "displayName": "CC Box Desc",
+      "type": "component",
+      "repeatable": true,
+      "component": "ui.cc-box-desc"
+    }
+  }
+}

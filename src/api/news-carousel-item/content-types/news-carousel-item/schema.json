@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "news_carousel_items",
+  "info": {
+    "singularName": "news-carousel-item",
+    "pluralName": "news-carousel-items",
+    "displayName": "News Carousel Item",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "contentBox": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ui.cc-box",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ui.button"
+    },
+    "article": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::article.article"
+    },
+    "order": {
+      "type": "integer"
+    }
+  }
+}

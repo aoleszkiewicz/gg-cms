@@ -1,0 +1,73 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hdww_items",
+  "info": {
+    "singularName": "hdww-item",
+    "pluralName": "hdww-items",
+    "displayName": "HDWW Item",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "backgroundColor": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "customField": "plugin::color-picker.color",
+      "required": true
+    },
+    "buttonIconPlacement": {
+      "type": "enumeration",
+      "enum": [
+        "left",
+        "right"
+      ],
+      "default": "left",
+      "required": true
+    },
+    "buttonTextColor": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "customField": "plugin::color-picker.color",
+      "required": true
+    },
+    "buttonPlacement": {
+      "type": "enumeration",
+      "enum": [
+        "top-left",
+        "top-right",
+        "bottom-left",
+        "bottom-right"
+      ],
+      "default": "bottom-left",
+      "required": true
+    },
+    "buttonIcon": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ui.icon",
+      "required": true
+    },
+    "contentIcon": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ui.icon"
+    },
+    "contentTextColor": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "customField": "plugin::color-picker.color"
+    },
+    "contentText": {
+      "type": "text"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "contentTitle": {
+      "type": "string"
+    }
+  }
+}

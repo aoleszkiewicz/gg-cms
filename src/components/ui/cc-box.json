@@ -1,0 +1,52 @@
+{
+  "collectionName": "components_ui_cc_boxes",
+  "info": {
+    "displayName": "CC Box",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "backgroundColor": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "required": true,
+      "customField": "plugin::color-picker.color"
+    },
+    "buttonIconPlacement": {
+      "type": "enumeration",
+      "enum": [
+        "left",
+        "right"
+      ],
+      "default": "left"
+    },
+    "buttonTextColor": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "customField": "plugin::color-picker.color"
+    },
+    "buttonPlacement": {
+      "type": "enumeration",
+      "enum": [
+        "top-left",
+        "top-right",
+        "bottom-left",
+        "bottom-right"
+      ],
+      "default": "bottom-left"
+    },
+    "buttonIcon": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ui.icon"
+    }
+  }
+}

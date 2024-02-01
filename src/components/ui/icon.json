@@ -1,0 +1,44 @@
+{
+  "collectionName": "components_ui_icons",
+  "info": {
+    "displayName": "Icon",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "enumeration",
+      "enum": [
+        "address",
+        "agile-and-eco-coding",
+        "arrow-down",
+        "arrow-down-2",
+        "arrow-right",
+        "arrow-right-2",
+        "arrow-right-3",
+        "bin-dark",
+        "bin-light",
+        "carousel-arrow-left",
+        "carousel-arrow-right",
+        "dynamic-cloud-solutions",
+        "energy-data-centers",
+        "fan",
+        "leaf-dark-green",
+        "leaf-light-green",
+        "facebook",
+        "facebook-2",
+        "innovations-in-management",
+        "instagram",
+        "instagram-2",
+        "it-audit",
+        "it-education",
+        "linkedin",
+        "linkedin-2",
+        "mail",
+        "sustainable-development-practices",
+        "twitter",
+        "twitter-2"
+      ]
+    }
+  }
+}
