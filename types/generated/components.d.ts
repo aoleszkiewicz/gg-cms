@@ -8,7 +8,7 @@ export interface ContentSubarticle extends Schema.Component {
   };
   attributes: {
     title: Attribute.String;
-    description: Attribute.String;
+    description: Attribute.Text;
     contentBoxes: Attribute.Component<'ui.cc-box-desc', true>;
   };
 }

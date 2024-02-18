@@ -781,6 +781,7 @@ export interface ApiAboutUsAboutUs extends Schema.SingleType {
     singularName: 'about-us';
     pluralName: 'about-uses';
     displayName: 'About Us';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -791,6 +792,11 @@ export interface ApiAboutUsAboutUs extends Schema.SingleType {
     ggEnergyLogo: Attribute.Media;
     ggSportLogoOnHover: Attribute.Media;
     ggEnergyLogoOnHover: Attribute.Media;
+    article: Attribute.Relation<
+      'api::about-us.about-us',
+      'oneToOne',
+      'api::article.article'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
